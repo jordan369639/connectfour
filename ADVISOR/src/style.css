@@ -1,0 +1,639 @@
+*{
+    margin: 0;padding: 0;
+}
+.bordarea{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+
+}
+.container{
+
+    display: grid;
+    grid-template-columns:  repeat(7,3rem); 
+    grid-template-rows: repeat(6,3rem);
+    grid-gap: 1rem 1rem;
+    background-color: white;
+    margin: auto;
+    width: 30rem;
+    height: 24rem;
+    justify-content: center;
+    border-radius: 2rem;
+    align-content: center;
+    position: relative;
+    top: -6rem;
+    box-shadow: -2px 15px 8px -2px rgb(0 0 0);
+    padding-bottom: 2rem;
+    z-index: 3;
+    cursor: pointer;
+  
+
+}
+
+.box{
+   
+    background-color: rgb(122 69 255);
+  border: 0.3rem solid black;
+ 
+  border-left:0.01rem solid black;
+  border-right:0.01rem solid black;
+  border-bottom:0.2rem solid black;
+    border-radius: 50rem;
+
+}
+.bordarea{
+    background-color: rgb(122 69 255);
+    height: 100vh;
+    width: 100vw;
+ 
+   
+}
+.footer{
+    width: 100%;
+    height: 10rem;
+    background: #3d179b;
+    position: relative;
+    top: -5rem;
+    justify-self: baseline;
+    align-self: baseline;
+    border-radius: 6rem 6rem 0rem 0rem;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+
+}
+.player{
+    background-color: rgb(255 255 255);
+    width: 7rem;
+    height: 8rem;
+  
+    border-radius: 1rem;
+    box-shadow: -2px 15px 8px -2px rgb(0 0 0);
+    border: 0.2rem solid rgb(0, 0, 0);
+    position: relative;
+    /* left: 18rem; */
+}
+.player::after{
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    background: url('/home/aminul/REACTAPP/ADVISOR/src/ images/redplayer.svg') no-repeat;
+}
+.player2{
+    background-color: rgb(255 255 255);
+    width: 7rem;
+    height: 8rem;
+    border-radius: 1rem;
+    box-shadow: -2px 15px 8px -2px rgb(0 0 0);
+    border: 0.2rem solid black;
+    position: relative;
+    /* left: -18rem; */
+
+}
+.player2::after{
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    background: url('/home/aminul/REACTAPP/ADVISOR/src/ images/yelowplayer.svg') no-repeat;
+
+}
+.players{
+    width: 56rem;
+    position: relative;
+    top: 11rem;
+    justify-content: space-between;
+    height: 13rem;
+    display: flex;
+    height: 9rem;
+    /* background: red; */
+    left: 16rem;
+}
+p{
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+ padding: 1rem 0rem;
+}
+span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.menuitems{
+    display: flex;
+    width: 37rem;
+    height: 1rem;
+    justify-content: center;
+    position: relative;
+    left: 26rem;
+    top: 0.3rem;
+
+
+
+}
+#menu{
+    width: 5rem;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    background-color: #4b12da;
+    font-weight: 600;
+    height: 2rem;
+cursor: pointer;
+position: relative;
+left: -12rem;
+}
+#menu:hover{
+    background-color: #a812da;
+}
+#restart{
+    width: 5rem;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    background-color: #4b12da;
+    font-weight: 600;
+    height: 2rem;
+    cursor: pointer;
+position: relative;
+left: 10rem;
+}
+#restart:hover{
+    background-color: #a812da;
+}
+.timer{
+   
+
+    width: 13rem;
+    height: 12rem;
+    position: relative;
+    top: -4.1rem;
+    left: 0 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+
+
+}
+
+.redtimer{
+    background: url('/home/aminul/REACTAPP/ADVISOR/src/ images/redtimer.svg')no-repeat;
+    background-position: center;
+   
+}
+.yellowtimer{
+    background: url('/home/aminul/REACTAPP/ADVISOR/src/ images/yellow.svg')no-repeat;
+    background-position: center;
+}
+.locator{
+    position: relative;
+    left: 38.7rem;
+    top: -5.6rem;
+    width: 3rem;
+    height: 2rem;
+}
+.locator img{
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+
+.timeleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+.timeleft >p {
+    
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin-top: -1rem;
+    word-spacing: 0.3rem;
+    position: relative;
+    top: 2rem;
+    color: white;
+       
+}
+.timeleft h2{
+    font-size: 4rem;
+    color: white;
+
+}
+.scorebord{
+    background: #e90336;
+    width: 14rem;
+    height: 7rem;
+    border: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -3rem;
+    border-radius: 1rem;
+    box-shadow: -2px 15px 8px -2px rgb(0 0 0);
+    color: white;
+    font-weight: 900;
+    left: 0rem;
+
+}
+#reset{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: linear-gradient(45deg, #260de6, #e46363);
+color: white;
+/* box-shadow: -2px 10px 5px -2px rgb(228, 220, 220); */
+}
+.pausemenu{
+    background-color: #260d0d45;
+/* background-color:   linear-gradient(45deg, #260de6, #e46363); */
+    width: 31rem;
+    height: 24rem;
+    z-index: 23;
+    position: relative;
+    top: 6rem;
+    border-radius: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: -0.4rem;
+
+
+}
+.menubtn{
+    padding: 1rem 4rem;
+    margin-top: -2rem;
+    border-radius: 2rem;
+    border: none;
+    background: pink;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+
+}
+#continue{
+    background-color: #0689f3;
+}
+#menureset{
+    background-color: #f3002a;
+}
+#newgame{
+    background-color: #27dd41;
+}
+.homepage{
+  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #2633b5, #29e9e5,#4ee4fc4a);
+    
+
+}
+
+.homemenu{
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: linear-gradient(45deg, #e805cc, #54ddda,#320be2e0);
+    background-image: url('/home/aminul/REACTAPP/ADVISOR/src/ images/board-layer-white-small.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 23;
+   
+}
+
+.homepage::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    position: absolute;
+    width: 0;
+    height: 0;
+  
+    
+}
+.gamemode{
+    width: 16rem;
+    height: 3rem;
+    border: none;
+    margin: 1rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 3px 7px 6px 1px #050505;
+    background: #424bf3;
+    color: white;
+    cursor: pointer;
+}
+.gameplay{
+    
+    width: 35rem;
+    display: felx;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    height: 38rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    display: none;
+
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Roboto';
+
+}
+h2{
+
+
+    padding: 2rem 1rem;
+    color: blue;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+
+}
+.gamerule{
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif
+
+}
+
+
+ul li{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+ 
+    padding: 0.3rem 1rem;
+    font-family: 'Roboto';
+
+}
+.check{
+    text-align: center;
+    font-size: 0.5rem;
+}
+#readrule:hover{
+    color: red;
+}
+
+.hide{
+    display: block;
+}
+.show{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .players{
+        left: 8rem;
+    }
+    .locator{
+        display: none;
+    }
+    .menuitems{
+        left: 18rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .players{
+        left: 4rem;
+    }
+    .locator{
+        display: none;
+    }
+    .menuitems{
+        left: 14rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .players{
+        left: 4rem;
+        width: 48rem;
+    }
+    .locator{
+        display: none;
+    }
+    .menuitems{
+        left: 10rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .locator{
+        display: none;
+    }
+   
+    .menuitems{
+        height: 6rem;
+        left: 17rem;
+    }
+    
+    #restart {
+      
+        left: 6rem;
+    }
+ 
+    .menuitems {
+     
+        width: 18rem;
+        height: 6rem;
+        left: 20rem;
+        top: 0.3rem;
+      
+    }
+    .players {
+        width: 23rem;     
+        top: -4rem;      
+        height: 13rem;
+        height: 10rem;
+        left: 15rem;
+        margin-top: 1rem;
+        
+    }
+    .player{
+    width: 10rem;
+    height: 6rem;
+    }
+    .player2{
+    
+    width: 10rem;
+    height: 6rem;
+    }
+    .player::after{
+        top: 1rem;
+        left: 8rem;
+    }
+    .player2::after{
+        top: 1rem;
+        left: -1rem;
+    }
+    .pausemenu{
+        width: 0rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .locator{
+        display: none;
+    }
+   
+    .menuitems{
+        height: 6rem;
+    }
+    
+    #restart {
+      
+        left: 6rem;
+    }
+    #menu {
+        width: 5rem;
+        height: 2rem;
+        left: -6rem;
+    }
+    .menuitems {
+        width: 18rem;
+        height: 6rem;
+        left: 12rem;
+        top: 0.3rem;
+      
+    }
+    .players {
+        width: 23rem;
+        top: -4rem;
+        height: 13rem;
+        height: 10rem;
+        left: 10rem;
+        margin-top: 1rem;
+        
+    }
+    .player{
+    width: 10rem;
+    height: 6rem;
+    }
+    .player2{
+    
+    width: 10rem;
+    height: 6rem;
+    }
+    .player::after{
+        top: 1rem;
+        left: 8rem;
+    }
+    .player2::after{
+        top: 1rem;
+        left: -1rem;
+    }
+    .pausemenu{
+        width: 0rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .players{
+        left: 6rem;
+    }
+    .menuitems{
+        left: 8rem;
+    }
+}
+@media screen and (max-width:550px) {
+
+    .locator{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(7,2.9rem);
+        grid-template-rows: repeat(6,2.9rem);
+        grid-gap: 0.7rem 0.3rem;
+        top: -6rem;
+        z-index: 3;
+        left: 0rem;
+        width: 23rem;
+       
+    
+    }
+    .menuitems{
+        height: 6rem;
+    }
+    
+    #restart {
+      
+        left: 6rem;
+    }
+    #menu {
+        width: 5rem;
+        height: 2rem;
+        left: -6rem;
+    }
+    .menuitems {
+      
+        width: 18rem;
+        height: 6rem;
+        left: 3rem;
+        top: 0.3rem;
+      
+    }
+    .players {
+        width: 23rem;
+      
+        top: -4rem;
+   
+        height: 13rem;
+      
+        height: 10rem;
+        left: 0rem;
+        margin-top: 1rem;
+        
+    }
+    .player{
+    width: 10rem;
+    height: 6rem;
+    }
+    .player2{
+    
+    width: 10rem;
+    height: 6rem;
+    }
+    .player::after{
+        top: 1rem;
+        left: 8rem;
+    }
+    .player2::after{
+        top: 1rem;
+        left: -1rem;
+    }
+    .pausemenu{
+        width: 0rem;
+    }
+    }
